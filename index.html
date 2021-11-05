@@ -286,7 +286,7 @@ The above copyright notice and this permission notice shall be included in all c
                         <h2 class="text-center">PARTNER WITH US!</h2>
                         <p>We are always looking for partnerships to help us grow and expand our ventures! Send us an
                             email and we will get back to you!</p>
-                        <form id="InquiryValidation" name="contact-form" method="POST" data-netlify-recaptcha="true"><input type="hidden"
+                        <!--<form id="InquiryValidation" name="contact-form" method="POST" data-netlify-recaptcha="true"><input type="hidden"
                                 name="form-name" value="contact-form" />
                             <div class="form-row">
                                 <div class="form-group col-md-6">
@@ -345,7 +345,28 @@ The above copyright notice and this permission notice shall be included in all c
                                     <button class="btn btn-cta btn-lg btn-fill">Send Message</button>
                                 </div>
                             </div>
+                        </form>-->
+                        <form name="contact" method="POST" data-netlify="true">
+                            <p>
+                                <label>Your Name: <input type="text" name="name" /></label>
+                            </p>
+                            <p>
+                                <label>Your Email: <input type="email" name="email" /></label>
+                            </p>
+                            <p>
+                                <label>Your Role: <select name="role[]" multiple>
+                                        <option value="leader">Leader</option>
+                                        <option value="follower">Follower</option>
+                                    </select></label>
+                            </p>
+                            <p>
+                                <label>Message: <textarea name="message"></textarea></label>
+                            </p>
+                            <p>
+                                <button type="submit">Send</button>
+                            </p>
                         </form>
+
                     </div>
                 </div>
             </div>
